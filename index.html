@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+    </style>
+
+    <h1> 3 random bilder fra selveste Nord-Odal</h1>
+</head>
+
+<body>
+
+</style>
+    <img onclick="addPic(this)" class="shadow"/>
+    <img onclick="addPic(this)" class="shadow"/>
+    <img onclick="addPic(this)" class="shadow"/>
+
+
+<style>
+    .shadow{
+        height:300px;
+        width: 350px;
+        box-shadow: 8px 8px 8px;
+    
+    }
+</style>
+    
+<script>
+
+    
+function getPicIfElse(){
+    let mynumber = Math.ceil(Math.random()* 3);
+    console.log(mynumber)
+    if(mynumber == 1){
+    return 'nord odal1.jpg';
+            } 
+    else if(mynumber == 2) {
+    return 'nord odal6.jpg';
+            }
+    else {
+    return 'nord odal7.jpg';
+ }
+}
+        
+function addPic(elem)  {
+console.log(elem)
+elem.src = getPicIfElse()
+
+}
+
+</script>
+</body>
+</html>
